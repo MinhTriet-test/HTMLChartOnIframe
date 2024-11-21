@@ -157,7 +157,7 @@
             },
 
             title: {
-                text: 'Live Data'
+                text: 'Nhiệt độ'
             },
 
             accessibility: {
@@ -174,18 +174,18 @@
             },
 
             xAxis: {
-                type: 'datetime', // Trục X là thời gian thực
-                tickPixelInterval: 150,
+                type: 'Thời gian', // Trục X là thời gian thực
+                tickPixelInterval: 50,
                 maxPadding: 0.1
             },
 
             yAxis: {
                 title: {
-                    text: 'Heartbeat'
+                    text: 'Nhiệt độ'
                 },
                 min: 0, // Giá trị tối thiểu của trục Y
                 max: 50, // Giá trị tối đa của trục Y
-                tickInterval: 10, // Khoảng cách giữa các dấu vạch trên trục Y
+                tickInterval: 5, // Khoảng cách giữa các dấu vạch trên trục Y
                 plotLines: [
                     {
                         value: 0,
@@ -210,7 +210,7 @@
 
             series: [
                 {
-                    name: 'Heartbeats',
+                    name: 'Nhiệt độ',
                     lineWidth: 2,
                     color: Highcharts.getOptions().colors[6],
                     data,
